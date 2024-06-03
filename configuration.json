@@ -1,5 +1,5 @@
 {
 	"minecraft": "1.20.1",
-	"item_models": "assets/minecraft/models/item/",
-	"i18n": "assets/minecraft/lang/en_us.json"
+	"i18n": "assets/minecraft/lang/en_us.json",
+	"i18n_item_start": "item.minecraft."
 }
