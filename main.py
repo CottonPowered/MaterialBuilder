@@ -75,6 +75,7 @@ class MaterialBuilder:
     def map_materials(self):
         print(f"> Mapping materials")
 
+        lone_materials = []
         for key in self.i18n.keys():
             for starter in self.config["i18n_start"]:
                 if key.startswith(starter):
@@ -84,6 +85,11 @@ class MaterialBuilder:
                     if "." in material_lone:
                         continue
 
+                    if material_lone in lone_materials:
+                        print(f"Multiple materials with the same id, might require manual intervention: {material_lone} (skipped)")
+                        continue
+
+                    lone_materials.append(material_lone)
                     self.materials.append([material_lone, key])
 
     def build_file(self):
