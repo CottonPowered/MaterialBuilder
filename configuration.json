@@ -1,5 +1,8 @@
 {
 	"minecraft": "1.20.1",
 	"i18n": "assets/minecraft/lang/en_us.json",
-	"i18n_start": ["item.minecraft.", "block.minecraft."]
+	"i18n_start": ["item.minecraft.", "block.minecraft."],
+
+	"package": "net.snackbag.cottonpowered.api.material",
+	"class": "VanillaMaterial"
 }
